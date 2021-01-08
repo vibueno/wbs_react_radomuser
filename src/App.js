@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import User from "./User";
 
-const users = [
+const defaultUsers = [
   {
     id: "5cd88ae26d2366b62f766b42",
     picture: "https://randomuser.me/api/portraits/men/51.jpg",
@@ -39,6 +39,8 @@ const users = [
 ];
 
 function App() {
+  const [users, setUsers] = useState(defaultUsers);
+
   return (
     <div className="App">
       <h1>
