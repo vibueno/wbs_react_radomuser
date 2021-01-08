@@ -2,7 +2,8 @@ import React from "react";
 import Contact from "./Contact";
 
 export default function User({ user }) {
-  const { picture, name, age, ...contactDetails } = user;
+  const { picture, name, age, address, email, phone } = user;
+  const contactDetails = { address, email, phone };
 
   return (
     <div>
